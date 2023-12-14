@@ -5,14 +5,13 @@ export default function Nav () {
     <nav>
       <ul>
         <li>
-          <Link href='/'>
-            <a>Home</a>
-          </Link>
+          <Link href='/'>Home</Link>
         </li>
         <li>
-          <Link href='/blog'>
-            <a>Blog</a>
-          </Link>
+          <Link href='/about'>About</Link>
+        </li>
+        <li>
+          <Link href='/blog'>Blog</Link>
         </li>
       </ul>
     </nav>
