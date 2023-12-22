@@ -1,5 +1,10 @@
+import Container from 'components/container'
 import Hero from 'components/hero'
 
-export default function Home () {
-  return <Hero title='CUBE' subtitle='アウトプットしていくサイト' imageOn />
+export default function Blog () {
+  return (
+    <Container>
+      <Hero title='CUBE' subtitle='アウトプットしていくサイト' imageOn />
+    </Container>
+  )
 }
