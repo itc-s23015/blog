@@ -12,7 +12,7 @@ const {
 } = siteMeta
 
 // 汎用OGP画像
-// import siteImg from 'images/ogp.jpg'
+import siteImg from 'images/ogp.jpg'
 
 export default function Meta ({
   pageTitle,
