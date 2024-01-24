@@ -35,7 +35,7 @@ const Details = ({ todo, user }) => {
     <div>
       <h1>{user.name}</h1>
       <h2>{user.email}</h2>
-      <h2>{todo.title}</h2>
+      <h2>Todo List: {todo.title}</h2>
       <h2>Completed: {todo.completed ? 'true' : 'false'}</h2>
     </div>
   )
