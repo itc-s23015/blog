@@ -30,6 +30,7 @@ export const getStaticProps = async context => {
   }
 }
 
+// userのtodolistと詳細を追加
 const Details = ({ todo, user }) => {
   return (
     <div>
