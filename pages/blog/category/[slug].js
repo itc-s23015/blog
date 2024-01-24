@@ -45,7 +45,7 @@ const getStaticProps = async context => {
   return {
     props: {
       name: cat.name,
-      posts: posts
+      posts
     }
   }
 }

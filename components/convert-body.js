@@ -1,5 +1,5 @@
 import parse from 'html-react-parser'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 
 const ConvertBody = ({ contentHTML }) => {
   const contentReact = parse(contentHTML, {
@@ -8,12 +8,15 @@ const ConvertBody = ({ contentHTML }) => {
         const { src, alt, width, height } = node.attribs
         return (
           <Image
-            layout='responsive'
             src={src}
             width={width}
             height={height}
             alt={alt}
             sizes='(min-width: 768px) 768px, 100vw'
+            style={{
+              width: '100%',
+              height: 'auto'
+            }}
           />
         )
       }

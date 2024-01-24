@@ -8,7 +8,7 @@ import {
   TwoColumnMain,
   TwoColumnSidebar
 } from 'components/two-column'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import eyecatch from 'images/about.jpg'
 
 export default function About () {
@@ -27,8 +27,11 @@ export default function About () {
         <Image
           src={eyecatch}
           alt=''
-          layout='responsive'
           sizes='(min-width: 1152xp) 1152px, 100vw'
+          style={{
+            width: '100%',
+            height: 'auto'
+          }}
           priority
           placeholder='blur'
         />
